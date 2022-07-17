@@ -6,47 +6,20 @@
 0 silly argv }
 1 notice cli v5.1.8
 2 verbose rootPath /Users/bingganink/f2e/getting-started-example
-3 info current version 0.0.0
+3 info current version 0.1.1
 4 silly isAnythingCommitted
 5 verbose isAnythingCommitted 1
 6 silly getCurrentBranch
 7 verbose currentBranch main
 8 silly remoteBranchExists
 9 silly isBehindUpstream
-10 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
-11 silly hasTags
-12 verbose hasTags true
-13 silly git-describe.sync "16b88c4" => {"refCount":"3","sha":"16b88c4","isDirty":false}
-14 info Assuming all packages changed
-15 verbose updated footer
-16 verbose updated header
-17 verbose updated remixapp
-18 verbose git-describe undefined => "16b88c4"
-19 silly git-describe parsed => {"refCount":"3","sha":"16b88c4","isDirty":false}
-20 info execute Skipping releases
-21 silly lifecycle No script for "preversion" in "root", continuing
-22 silly lifecycle No script for "preversion" in "footer", continuing
-23 silly lifecycle No script for "preversion" in "header", continuing
-24 silly lifecycle No script for "version" in "header", continuing
-25 silly lifecycle No script for "version" in "footer", continuing
-26 silly lifecycle No script for "version" in "root", continuing
-27 silly gitAdd [
-27 silly gitAdd   'packages/header/package.json',
-27 silly gitAdd   'packages/header/package-lock.json',
-27 silly gitAdd   'packages/footer/package.json',
-27 silly gitAdd   'packages/footer/package-lock.json',
-27 silly gitAdd   'lerna.json'
-27 silly gitAdd ]
-28 silly gitCommit v0.1.0
-29 verbose git [ 'commit', '-m', 'v0.1.0' ]
-30 silly gitTag v0.1.0
-31 verbose git [ 'tag', 'v0.1.0', '-m', 'v0.1.0' ]
-32 silly lifecycle No script for "postversion" in "footer", continuing
-33 silly lifecycle No script for "postversion" in "header", continuing
-34 silly lifecycle No script for "postversion" in "root", continuing
-35 info git Pushing tags...
-36 silly gitPush origin main
-37 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin main
-37 error fatal: unable to access 'https://github.com/vivianink1991/lerna-starter.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
-37 error     at makeError (/Users/bingganink/f2e/getting-started-example/node_modules/execa/lib/error.js:60:11)
-37 error     at handlePromise (/Users/bingganink/f2e/getting-started-example/node_modules/execa/index.js:118:26)
+10 error Error: Command failed with exit code 1: git remote update
+10 error fatal: unable to access 'https://github.com/vivianink1991/lerna-starter.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+10 error error: Could not fetch origin
+10 error Fetching origin
+10 error     at makeError (/Users/bingganink/f2e/getting-started-example/node_modules/execa/lib/error.js:60:11)
+10 error     at Function.module.exports.sync (/Users/bingganink/f2e/getting-started-example/node_modules/execa/index.js:194:17)
+10 error     at Object.execSync (/Users/bingganink/f2e/getting-started-example/node_modules/@lerna/child-process/index.js:39:16)
+10 error     at updateRemote (/Users/bingganink/f2e/getting-started-example/node_modules/@lerna/version/lib/is-behind-upstream.js:34:16)
+10 error     at isBehindUpstream (/Users/bingganink/f2e/getting-started-example/node_modules/@lerna/version/lib/is-behind-upstream.js:16:3)
+10 error     at VersionCommand.initialize (/Users/bingganink/f2e/getting-started-example/node_modules/@lerna/version/index.js:153:9)
