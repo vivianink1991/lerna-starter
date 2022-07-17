@@ -1,6 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "dependencies": {
+    "lerna": "^5.1.8",
+    "nx": "^14.4.3"
+  },
   "devDependencies": {
+    "@octokit/core": "^4.0.4"
   }
 }
